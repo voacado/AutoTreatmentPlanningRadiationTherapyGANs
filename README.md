@@ -57,3 +57,12 @@ Other directories:
 - `docs` - final report
 - `results` - model performance per every 5 epochs, MAE and PSNR results at the final 25th epoch
 - `video` - video walkthrough of model
+
+## How to Run the Code
+
+1. Clone this repo!
+2. Download the dataset (`LIVER.zip` and `Liver_dicom.zip` from the CORI dataset webpage, or use my Kaggle dataset)
+3. Change the path to the data source (in `kaggle_path`) to point to the `dataset` folder.
+4. The main file should be good to run as-is as a notebook once the data is connected (although, you may have to install the required packages mentioned above).
+
+An even easier way to run this would be to load the Jupyter Notebook onto Kaggle, load my dataset into the working environment, ensure that the P100 accelerator (GPU) is selected, and hit "Run All".
