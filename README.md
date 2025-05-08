@@ -46,3 +46,14 @@ Additionally, make sure your dataset is extracted in your `dataset` folder such 
 - `dataset/Liver_dicom/`
 
 NOTE: I ran this model completely on Kaggle. All the required packages are already pre-installed on their compute, and uploading the dataset is very straightforward. Make sure you change the variable `kaggle_path` so it points to your dataset!
+
+## Directory Breakdown
+
+The main folder of interest will be `src`, which contains the runner file that trains and validates the replicated model. 
+
+Other directories:
+- `PyHealthFiles` - the files sent in the PR to the PyHealth repo
+- `dataset` - the dataset files, uploaded as a Git LFS file (may be removed due to going over the limit for a free Git account)
+- `docs` - final report
+- `results` - model performance per every 5 epochs, MAE and PSNR results at the final 25th epoch
+- `video` - video walkthrough of model
